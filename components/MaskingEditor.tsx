@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { AppProvider } from '../state/AppContext';
-import { XMarkIcon, CheckIcon, TrashIcon } from './icons';
+import { XMarkIcon, CheckIcon, ArrowPathIcon } from './icons';
 
 export const MaskingEditor: React.FC = () => {
   const { state, dispatch } = React.useContext(AppProvider);
@@ -137,7 +137,7 @@ export const MaskingEditor: React.FC = () => {
                 onClick={handleClear}
                 className="px-4 py-2 bg-slate-600 hover:bg-slate-700 text-white rounded-lg flex items-center gap-2"
               >
-                <TrashIcon className="w-4 h-4" />
+                <ArrowPathIcon className="w-4 h-4" />
                 Clear
               </button>
               <button
