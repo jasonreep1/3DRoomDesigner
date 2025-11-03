@@ -1,0 +1,4 @@
+/* Minimal CSS file for custom styles not covered by Tailwind */
+* {
+  box-sizing: border-box;
+}
